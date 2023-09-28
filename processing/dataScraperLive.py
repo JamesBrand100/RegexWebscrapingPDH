@@ -1,4 +1,3 @@
-
 #get necessary packages 
 #for debugging
 import pdb
@@ -31,6 +30,8 @@ data = []
 for line in splitBySort:
     putInData = re.search( "\$\d+\.\d+",line)[0]
     data = data + [float(putInData[1:])]
+
+pdb.set_trace()
 
 
 
